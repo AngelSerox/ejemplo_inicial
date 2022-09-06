@@ -1,3 +1,10 @@
 alert("Hola we");
 
-console.log("Saludos de consola");
+
+var nombre= 'Miguel';
+var Altura= 1.90;
+const carrera = 'informatica';
+
+alert(nombre);
+
+console.log("Saludos de consola" + nombre);
