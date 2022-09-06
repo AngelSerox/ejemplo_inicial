@@ -14,3 +14,18 @@ document.write(conc);
 
 var Datos = document.getElementById("Datos");
 Datos.innerHTML = conc;
+
+if(Altura <= 180)
+{
+    Datos.innerHTML = "Eres una persona alta";
+}
+
+esle
+{
+    Datos.innerHTML = "Eres una persona bajita";
+}
+
+for(var i = 0; i <= 2022; i ++);
+{
+    Datos.innerHTML = "año:" + i;
+}
