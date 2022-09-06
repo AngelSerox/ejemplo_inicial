@@ -11,3 +11,6 @@ const carrera = 'informatica';
 
 var conc = nombre + " " + Altura;
 document.write(conc);
+
+var Datos = document.getElementById("Datos");
+Datos.innerHTML = conc;
