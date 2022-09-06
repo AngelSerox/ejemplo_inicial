@@ -27,5 +27,6 @@ esle
 
 for(var i = 0; i <= 2022; i ++);
 {
-    Datos.innerHTML = "año:" + i;
+    console.log("año: " + i);
+    Datos.innerHTML = Datos.innerHTML + "<h1>año:" +i+ "</h1>";
 }
