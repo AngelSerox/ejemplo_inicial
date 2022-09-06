@@ -5,6 +5,9 @@ var nombre= 'Miguel';
 var Altura= 1.90;
 const carrera = 'informatica';
 
-alert(nombre);
+//alert(nombre);
 
-console.log("Saludos de consola" + nombre);
+//console.log("Saludos de la consola" + "" + nombre);
+
+var conc = nombre + " " + Altura;
+document.write(conc);
