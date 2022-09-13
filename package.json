@@ -4,7 +4,8 @@
   "description": "\"# ejemplo_inicial\" \r #\u0000 \u0000I\u0000n\u0000i\u0000c\u0000i\u0000a\u0000l\u0000_\u00001\u0000\r\u0000 \u0000#\u0000 \u0000I\u0000n\u0000i\u0000c\u0000i\u0000a\u0000l\u0000_\u00001\u0000\r\u0000 \u0000#\u0000 \u0000I\u0000n\u0000i\u0000c\u0000i\u0000a\u0000l\u0000_\u00001\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
