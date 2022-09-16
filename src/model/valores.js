@@ -6,4 +6,4 @@ const Valor = new Schema({
     humedad: String,
     fecha: Date
 })
-module.exports = mongoose.model('valores', Valores);
+module.exports = mongoose.model('valores', Valor);
