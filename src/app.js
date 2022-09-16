@@ -1,7 +1,6 @@
 const express = require('express');
 const log = require('morgan');
 const app = express();
-const bidyParser = require('body-parser');
 const bodyParser = require('body-parser');
 
 //Escuchar Servidor
