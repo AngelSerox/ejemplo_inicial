@@ -3,6 +3,7 @@ const log = require('morgan');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
+const mongoose = require('mongoose');
 
 const indexRoutes = require('./routes/index.js');
 
@@ -10,6 +11,10 @@ const indexRoutes = require('./routes/index.js');
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('views egine', 'ejs');
+
+//Conexion a MongoDB
+mongoose.connect('mongodb+srv://Miguel_Angel:eNMcLT5zdwIJMhvZ@cluster0.xmeotak.mongodb.net/Datos?retryWrites=true&w=majority')
+.then(bd => console.log('BD se conecto correctamente')).catch(err => console.log(err));
 
 //midelware
 app.use(log('dev'));
