@@ -1,9 +1,20 @@
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 const model = require('../model/valores')();
 
-routes.get('/', (req, res) =>{
-res.render('index.ejs');
+const Valor = require('../model/valores');
+
+router.get('/', async (req, res) => {
+    const valores = await Valor.find();
+    console.log(valores);
+    res.render('index.ejs',{
+        valores
+    });
 });
 
-module.exports = routes;
+router.post('/add', async (req, res) => {
+    const valor = new Valor(req.body);
+    await valor.save();
+    res.redirect('/');
+});
+module.exports = router;
